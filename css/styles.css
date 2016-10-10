@@ -4,22 +4,21 @@ nav {
     font-size: 20px;
 }
 
-.bottom-nav > * {
+.bottom-nav > ul > li > a {
     color: #BDBDBD;
-    background: #2b2d2f;
+
     font-weight: bold;
     font-family: Montserrat;
 
 }
 
-.bottom-nav > *.active {
+.bottom-nav > ul > li.active {
     outline: 0;
-    color: #fff;
-    background-color: #00BFA5;
-    border-color: #00BFA5;
+    color: #f0f0f0;
+
 }
 
-.bottom-nav > *:hover {
+.bottom-nav > ul > li > a:hover {
     outline: 0;
     color: #fff;
 }
@@ -45,6 +44,7 @@ nav {
 
 html {
     overflow-y: visible;
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -52,25 +52,17 @@ a:hover {
 }
 
 .display > .dp {
-    margin-top: 5%;
-    top: 15%;
-    left: 40%;
+
     position: relative;
+    width: 25%;
+    height: auto;
+    -webkit-animation-duration: 4.5s;
 
-
-    -webkit-animation-duration: 2.5s;
-
-}
-
-.display > .icons {
-    top: 25%;
-    left: 40%;
-    position: absolute;
 }
 
 .icon-tags {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     padding: 0.4%;
     position: absolute;
     margin-left: -40px;
@@ -82,15 +74,35 @@ a:hover {
 
 .icon-links {
     position: relative;
-    margin-left: 45%;
+    margin-left: 10%;
 }
 
-.icon-links > a {
-    position: absolute;
-    top: 50%;
+.display > .row > a {
+    color: #E0E0E0;
+    font-weight: bold;
+    font-family: Montserrat;
+
+}
+
+.display > .row > a:hover {
+    color: #f0f0f0;
+
 }
 
 body {
     background-color: #607D8B;
 
 }
+
+.text-custom {
+    color: #607D8B;
+    font-family: Montserrat;
+}
+
+.text-custom2 {
+    color: #E0E0E0;
+
+    font-family: Montserrat;
+}
+
+

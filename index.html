@@ -3,159 +3,321 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebPage</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
 
 </head>
 <body>
-<!--<nav class="navbar navbar-full  navbar-light bg-faded">-->
-    <!--<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2"-->
-            <!--aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">-->
-        <!--&#9776;-->
-    <!--</button>-->
-    <!--<div class="collapse navbar-toggleable-xs container" id="exCollapsingNavbar2">-->
-        <!--<a class="navbar-brand" href="#"></a>-->
-        <!--<ul class="nav navbar-nav">-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>-->
-            <!--</li>-->
-            <!--<li class="nav-item active">-->
-                <!--<a class="nav-link" href="#">Profile</a>-->
-            <!--</li>-->
+<nav class="navbar navbar-full navbar-fixed-top navbar-light bg-faded">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2"
+            aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+    </button>
+    <div class="pull-xs-right m-r-2 m-x-auto hide-on-med-and-up"><img src="img/displaypic.jpg" width="45" height="45"
+                                                 class="dp responsive-img animated slideInLeft  img-circle img-fluid"></div>
+    <div class="collapse navbar-toggleable-xs container" id="exCollapsingNavbar2">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link " href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#edu">Education<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#exp">Experience<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#proj">Projects<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">References<span class="sr-only">(current)</span></a>
+            </li>
 
-            <!--&lt;!&ndash;<li class="nav-item">&ndash;&gt;-->
-            <!--&lt;!&ndash;<a class="nav-link" href="login.html">Flauntable Me</a>&ndash;&gt;-->
-            <!--&lt;!&ndash;</li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li class="nav-item pull-lg-right">&ndash;&gt;-->
-            <!--&lt;!&ndash;<a class="nav-link text-muted" href="login.html">Login</a>&ndash;&gt;-->
-            <!--&lt;!&ndash;</li>&ndash;&gt;-->
-        <!--</ul>-->
-    <!--</div>-->
-<!--</nav>-->
-<div class="display">
-    <img src="img/displaypic.jpg" class="dp animated flipInY img-circle img-fluid img-thumbnail">
+        </ul>
 
-    <div class="icon-links">
-        <a href="https://facebook.com/vaikzs" target="_blank" class="img-circle blue-grey-text"><span
-                class="label icons">&nbsp; </span> <i class="fa fa-facebook"></i></a>
-        <a href="mailto:vaikunth@knoesis.org" class=" blue-grey-text "><span class="label">&nbsp;</span> <i
-                class="fa fa-envelope icons"></i></a>
-        <a href="https://www.linkedin.com/in/vaikunth-sridharan-6b0104b5" target="_blank"
-           class=" blue-grey-text icons"><span class="label ">&nbsp;</span> <i class="fa fa-linkedin"></i></a>
-        <a href="http://www.github.com/vaikzs" target="_blank" class=" blue-grey-text "><span
-                class="label">&nbsp;</span><i class="fa fa-github"></i></a>
-
-        <!--<a href="#!" class=" blue-grey-text">CV <i class="fa fa-download"></i></a>-->
-        <a href="asserts/VaikunthSridharan.pdf" class=" blue-grey-text" download><span
-                class="label icons">&nbsp;</span> <i class="fa fa-download"></i></a>
     </div>
+</nav>
+<nav class="bottom-nav navbar navbar-fixed-bottom navbar-full navbar-dark bg-inverse hide-on-med-and-up">
+    <ul class="nav navbar-nav container pull-xs-right">
+        <li class="nav-item"><a href="https://www.github.com/vaikzs" target="_blank" class="nav-link"><i
+                class="fa fa-github text-custom"></i></a></li>
+        <li class="nav-item"><a href="https://facebook.com/vaikzs" target="_blank" class="nav-link"><i
+                class="fa fa-facebook text-custom"></i></a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/vaikunth-sridharan-6b0104b5"
+                                target="_blank" class="nav-link"><i class="fa fa-linkedin text-custom"></i></a></li>
+        <li class="nav-item"><a href="asserts/VaikunthSridharan.pdf" class="nav-link" download><i
+                class="fa fa-download text-custom"></i></a></li>
+        <li class="nav-item"><a href="mailto:vaikunth@knoesis.org" class="nav-link"><i
+                class="fa fa-envelope text-custom"></i></a></li>
+    </ul>
+
+</nav>
+<nav class="bottom-nav navbar navbar-fixed-bottom navbar-full navbar-dark bg-inverse hide-on-med-and-down">
+    <ul class="nav navbar-nav container ">
+        <li class="nav-item"><a class="nav-link" href="https://www.github.com/vaikzs" target="_blank"> GitHub <i
+                class="fa fa-github text-custom"></i></a></li>
+        <li class="nav-item "><a class="nav-link" href="https://facebook.com/vaikzs" target="_blank"> Facebook <i
+                class="fa fa-facebook text-custom"></i></a>
+        </li>
+        <li class="nav-item "><a class="nav-link" href="https://www.linkedin.com/in/vaikunth-sridharan-6b0104b5"
+                                 target="_blank"> LinkedIn <i class="fa fa-linkedin text-custom"></i></a></li>
+        <li class="nav-item "><a href="asserts/VaikunthSridharan.pdf" class="nav-link" download>Resume <i
+                class="fa fa-download text-custom"></i> </a></li>
+        <li class="nav-item"><a href="mailto:vaikunth@knoesis.org" class="nav-link">Gmail <i
+                class="fa fa-envelope text-custom"></i></a>
+        </li>
+    </ul>
+</nav>
+<div class="display row">
+    <div class="col-xs-9">
+        <blockquote
+                    class="blockquote m-l-3 m-t-6 m-x-auto d-block animated slideInLeft text-justify text-custom2 font-weight-bold">I am
+            a
+            Master's
+            Student at Kno.e.sis Center, Wright State University. I am advised by Dr. Amit P Sheth, Lexis Nexis Ohio
+            Eminent Scholar and Director of Kno.e.sis - Ohio Center of Excellence in Knowledge Enabled Computing. I am
+            co-advised by Dr. Tanvi Banerjee with whom I work on
+            Dashboards
+            for Data Analytics in the context of City Traffic and Health-care.
+        </blockquote>
+
+    </div>
+    <div class="col-xs-2 hide-on-med-and-down m-r-5 d-block">
+        <img src="img/displaypic.jpg" width="256" height="256"
+             class="dp responsive-img animated slideInLeft pull-xs-right m-t-6  img-circle img-thumbnail img-fluid">
+    </div>
+
 </div>
 
 
 <div class="wrapper container-fluid">
     <div id="edu" class="edu">
-        <img src="img/gray_cap.png" class="img-fluid img-thumbnail bg-faded icon-tags">
+        <div class="hide-on-med-and-down"><img src="img/gray_cap.png"
+                                               class=" img-thumbnail bg-faded icon-tags"></div>
         <h2 class="font-weight-bold p-x-0 m-x-2 m-t-2">Education</h2>
         <span href="#" class="p-x-1">
+            <h4 class="font-weight-bold p-x-2 "><span>Wright State University</span><br><span
+                    class="pull-sm-right">Aug '14 - Present</span></h4>
 
+            <p class="font-weight-bold p-x-2 h5">Master of Science in Computer Science<br><span
+                    class="pull-xs-right">CGPA 3.33 / 4.0</span></p>
 
-            <h4 class="font-weight-bold p-x-2">Wright State University <span
-                    class="pull-lg-right">Aug '14 - Present</span></h4>
-            <p class="font-weight-bold p-x-2 h5">Master of Science in Computer Science <span class="pull-lg-right">CGPA 3.33 / 4.0</span></p>
         </span>
         <span href="#" class="p-x-1">
-            <h4 class="font-weight-bold p-x-2">Anna University <span class="pull-lg-right">May '10 - May'14</span></h4>
-            <p class="font-weight-bold p-x-2 h5">Bachelor of Technology in Information Technology <span
-                    class="pull-lg-right">CGPA 3.14 / 4.0</span>
+            <h4 class="font-weight-bold p-x-2"><span>Anna University</span><br> <span class="pull-sm-right">May '10 - May'14</span></h4>
+            <p class="font-weight-bold p-x-2 h5">Bachelor of Technology in Information Technology<br> <span
+                    class="pull-sm-right">CGPA 3.14 / 4.0</span>
             </p>
         </span>
 
     </div>
-    <div id="exp" class="exp">
-        <img src="img/work2.png" class="img-fluid  img-thumbnail bg-faded icon-tags">
+    <div id="exp" class="exp ">
+        <div class="hide-on-med-and-down"><img src="img/work2.png" class="img-fluid img-thumbnail bg-faded icon-tags">
+        </div>
 
         <h2 class="font-weight-bold p-x-0 m-x-2 m-t-2">Experience</h2>
 
         <span href="#" class="p-x-1">
-            <h4 class="font-weight-bold p-x-2">Graduate Research Assistant<span
-                    class="pull-lg-right">Jan '13 - Present</span></h4>
+            <h4 class="font-weight-bold p-x-2"><span>Research Assistant</span><br> <span
+                    class="pull-sm-right">Jan '13 - Present</span></h4>
             <p class="font-weight-bold p-x-2 h5">Knoesis - Wright State University<span
-                    class="pull-lg-right"></span></p>
+                    class="pull-sm-right"></span></p>
         </span>
         <span href="#" class="p-x-1">
-            <h4 class="font-weight-bold p-x-2">Teaching Assistant<span
-                    class="pull-lg-right">Jan '16 - April '16</span></h4>
-            <p class="font-weight-bold p-x-2 h5">CS 4800/7900 Web Information Systems<span class="pull-lg-right"></span>
+            <h4 class="font-weight-bold p-x-2"><span>Teaching Assistant</span><br> <span
+                    class="pull-sm-right">Jan '16 - April '16</span></h4>
+            <p class="font-weight-bold p-x-2 h5">CS 4800/7900 Web Information Systems<span class="pull-sm-right"></span>
             </p>
         </span>
         <span href="#" class="p-x-1">
-            <h4 class="font-weight-bold p-x-2">Software Developer Intern<span
-                    class="pull-lg-right">Jun '13 - Feb '14</span></h4>
-            <p class="font-weight-bold p-x-2 h5">Servion Global Solutions<span class="pull-lg-right"></span>
+            <h4 class="font-weight-bold p-x-2"><span>Software Developer Intern</span><br><span
+                    class="pull-sm-right">Jun '13 - Feb '14</span></h4>
+            <p class="font-weight-bold p-x-2 h5">Servion Global Solutions<span class="pull-sm-right"></span>
             </p>
         </span>
 
 
     </div>
     <div id="proj" class="projects">
-        <img src="img/projects.png" class="img-fluid img-thumbnail bg-faded icon-tags">
+        <div class="hide-on-med-and-down"><img src="img/projects.png"
+                                               class="img-fluid img-thumbnail bg-faded icon-tags"></div>
 
         <h2 class="font-weight-bold p-x-0 m-x-2 m-t-2">Projects</h2>
 
         <span href="#" class="p-x-1">
-            <h4 class="font-weight-bold p-x-2">City360 <a class="pull-lg-right text-muted" href="http://bit.ly/21h7T2G"
-                                                          target="_blank">http://bit.ly/21h7T2G</a></h4>
-            <p class="font-weight-bold p-x-2 h5">Knoesis - Wright State University</p>
+            <h4 class="font-weight-bold p-x-2">City360 <a class="pull-xs-right text-muted hide-on-med-and-up"
+                                                          href="http://bit.ly/21h7T2G"
+                                                          target="_blank">DemoLink</a><a
+                    class="pull-xs-right text-muted hide-on-med-and-down" href="http://bit.ly/21h7T2G"
+                    target="_blank">http://bit.ly/21h7T2G</a></h4>
+            <p class="font-weight-bold p-x-2 h5 text-justify">Knoesis - Wright State University</p>
             <p class="p-x-2 h5">Lead developer of City360, a web application based tool that facilitates decision making with respect to traffic flow congestion, this is achieved by collecting heterogeneous data from multi-modal sources and visualizing them.</p>
         </span>
 
         <span href="#" class="p-x-1">
-            <h4 class="font-weight-bold p-x-2">kHealth Asthma <a class="pull-lg-right text-muted"
-                                                                 href="http://wiki.knoesis.org/index.php/Asthma"
-                                                                 target="_blank">http://wiki.knoesis.org/index.php/Asthma</a></h4>
-            <p class="font-weight-bold p-x-2 h5">Knoesis - Wright State University <span></span>
+            <h4 class="font-weight-bold p-x-2">kHealth Asthma<a class="pull-xs-right text-muted hide-on-med-and-up"
+                                                                href="http://wiki.knoesis.org/index.php/Asthma"
+                                                                target="_blank">WikiLink</a><a
+                    class="pull-xs-right text-muted hide-on-med-and-down"
+                    href="http://wiki.knoesis.org/index.php/Asthma"
+                    target="_blank">http://wiki.knoesis.org/index.php/Asthma</a></h4>
+            <p class="font-weight-bold p-x-2 h5">Knoesis - Wright State University<span></span>
 
             </p>
-            <p class="p-x-2 h5">Currently I am a researcher and developer for the Asthma project, k-Health Asthma kit consists of various blue-tooth enabled sensors and Tablet with our Android Application for patient risk assessment.</p>
+            <p class="p-x-2 h5 text-justify">Currently I am a researcher and developer for the Asthma project, k-Health Asthma kit consists of various blue-tooth enabled sensors and Tablet with our Android Application for patient risk assessment.</p>
         </span>
         <span href="#" class="p-x-1">
-            <h4 class="font-weight-bold p-x-2">kHealth Dementia<a class="pull-lg-right text-muted"
+            <h4 class="font-weight-bold p-x-2">kHealth Dementia<a class="pull-xs-right text-muted hide-on-med-and-up"
                                                                   href="http://wiki.knoesis.org/index.php/Dementia"
-                                                                  target="_blank">http://wiki.knoesis.org/index.php/Dementia</a></h4>
-            <p class="font-weight-bold p-x-2 h5">Knoesis - Wright State University <span></span>
+                                                                  target="_blank">WikiLink</a><a
+                    class="pull-xs-right text-muted hide-on-med-and-down"
+                    href="http://wiki.knoesis.org/index.php/Dementia"
+                    target="_blank">http://wiki.knoesis.org/index.php/Dementia</a></h4>
+            <p class="font-weight-bold p-x-2 h5">Knoesis - Wright State University<span></span>
             </p>
-            <p class="p-x-2 h5">Developer and researcher for Dementia project, k-health Dementia kit consists of blue-tooth sensors and tablet device with our Android app. This mobile/sensor application aspire to study the behavioral markers for dementia patients.</p>
+            <p class="p-x-2 h5 text-justify">Developer and researcher for Dementia project, k-health Dementia kit consists of blue-tooth sensors and tablet device with our Android app. This mobile/sensor application aspire to study the behavioral markers for dementia patients.</p>
         </span>
-
-
     </div>
-    <div id="skills" class="skills">
-        <img src="img/skills.png" class="img-fluid img-thumbnail bg-faded icon-tags">
-
-        <h2 class="font-weight-bold p-x-0 m-x-2 m-t-2">Skills</h2>
-        <span class="p-x-2"></span>
-
+    <div id="ref">
+        <!--<div class="hide-on-med-and-down"><img src="img/references.png"-->
+                                               <!--class="img-fluid img-thumbnail bg-faded icon-tags"></div>-->
+        <!--<h2 class="font-weight-bold p-x-0 m-x-2 m-t-2">References</h2>-->
+        <!--<div class="">-->
+            <!--<h4 class="card-title">Card title</h4>-->
+            <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's-->
+                <!--content.</p>-->
+            <!--<a href="#" class="card-link">Card link</a>-->
+            <!--<a href="#" class="card-link">Another link</a>-->
+        <!--</div>-->
     </div>
+    <!--<div id="skills" class="skills">-->
+    <!--<img src="img/skills.png" class="img-fluid img-thumbnail bg-faded icon-tags">-->
+
+    <!--<h2 class="font-weight-bold p-x-0 m-x-2 m-t-2">Skills</h2>-->
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Languages</h4>-->
+
+    <!--<div class="container">-->
+    <!--<h4><span class=" tag tag-pill tag-default">Java (Incl. Android)</span>-->
+    <!--<span class=" tag tag-pill tag-default">JavaScript</span>-->
+    <!--<span class=" tag tag-pill tag-default">C++</span>-->
+    <!--<span class=" tag tag-pill tag-default">SQL</span></h4>-->
+
+    <!--</div>-->
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Client</h4>-->
+
+    <!--<div class="container">-->
+    <!--<h4><span class=" tag tag-pill tag-default">HTML</span>-->
+    <!--<span class=" tag tag-pill tag-default">CSS </span>-->
+    <!--<span class=" tag tag-pill tag-default">jQuery</span>-->
+    <!--<span class=" tag tag-pill tag-default">Underscore</span>-->
+    <!--<span class=" tag tag-pill tag-default">SocketsIO</span>-->
+    <!--<span class=" tag tag-pill tag-default">PaperJS</span>-->
+    <!--<span class=" tag tag-pill tag-default">MapboxJS</span>-->
+    <!--<span class=" tag tag-pill tag-default">Bootstrap</span>-->
+    <!--<span class=" tag tag-pill tag-default">Materialize CSS</span>-->
+    <!--<span class=" tag tag-pill tag-default">Foundation </span>-->
+    <!--</h4>-->
+
+    <!--<h4></h4>-->
+
+
+    <!--</div>-->
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Server</h4>-->
+
+    <!--<div class="container">-->
+    <!--<h4><span class=" tag tag-pill tag-default">Node JS</span>-->
+    <!--<span class=" tag tag-pill tag-default">J2EE</span>-->
+    <!--<span class=" tag tag-pill tag-default"> Express </span>-->
+    <!--<span class="tag tag-pill tag-default"> Meteor</span>-->
+    <!--<span class="tag tag-pill tag-default"> Sails</span>-->
+
+    <!--</h4>-->
+
+
+    <!--</div>-->
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Databases</h4>-->
+
+    <!--<div class="container">-->
+    <!--<h4><span class=" tag tag-pill tag-default">MySQL</span>-->
+    <!--<span class=" tag tag-pill tag-default">Mongo</span>-->
+
+
+    <!--</h4>-->
+
+
+    <!--</div>-->
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Tools & Technologies</h4>-->
+
+    <!--<div class="container">-->
+    <!--<h4><span class=" tag tag-pill tag-default">Apache Hadoop - Map Reduce</span>-->
+    <!--<span class=" tag tag-pill tag-default">SQL Workbench</span>-->
+    <!--<span class="tag tag-pill tag-default"></span>-->
+
+
+    <!--</h4>-->
+
+
+    <!--</div>-->
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Package Managers</h4>-->
+
+    <!--<div class="container">-->
+    <!--<h4><span class=" tag tag-pill tag-default">Node Package Manager</span>-->
+    <!--<span class=" tag tag-pill tag-default">Atmosphere</span>-->
+    <!--<span class="tag tag-pill tag-default">Bower</span>-->
+
+
+    <!--</h4>-->
+
+
+    <!--</div>-->
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Version Control System</h4>-->
+
+    <!--<div class="container">-->
+    <!--<h4><span class=" tag tag-pill tag-default">Git</span>-->
+    <!--<span class=" tag tag-pill tag-default">Subversion</span>-->
+
+
+    <!--</h4>-->
+
+
+    <!--</div>-->
+
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Developer Tools/Editors</h4>-->
+
+    <!--<div class="container h4 row">-->
+    <!--<span class=" tag tag-pill tag-default col-sm-2 offset-lg-1">WebStorm</span>-->
+    <!--<span class=" tag tag-pill tag-default col-sm-2 offset-lg-1">Eclipse</span>-->
+    <!--<span class=" tag tag-pill tag-default col-sm-2 ">Android Studio</span>-->
+    <!--<span class=" tag tag-pill tag-default col-sm-2 ">Netbeans</span>-->
+    <!--<span class=" tag tag-pill tag-default col-sm-2 offset-lg-1">Github's Atom</span>-->
+
+
+    <!--</div>-->
+    <!--<h4 class="font-weight-bold container m-l-2 text-muted">Operating Systems</h4>-->
+
+    <!--<div class="container h4 row">-->
+    <!--<span class=" tag tag-pill tag-default col-sm-2 offset-lg-4">Linux</span>-->
+    <!--<span class=" tag tag-pill tag-default col-sm-2 offset-lg-4">Windows</span>-->
+
+
+    <!--</div>-->
+
+    <!--</div>-->
 
 
 </div>
-<div class="bg-inverse">
-    <span class="h6 font-weight-bold p-x-0 m-x-2">Designed & Developed from scratch using Twitter's Bootstrap and
-        Couple of Coffees :D</span>
-</div>
-<nav id="bottomNav" class="btn-group row navbar-full navbar-fixed-bottom navbar-light bg-faded bottom-nav" role="group">
-
-    <a href="#edu" class="btn btn-lg col-md-3">Education</a>
-    <a href="#proj" class="btn btn-lg col-md-3">Projects</a>
-    <a href="#exp" class="btn btn-lg col-md-3">Experience</a>
-    <a href="#skills" class="btn btn-lg col-md-3">Skills</a>
-</nav>
 
 
+<!--<div class="bg-inverse">-->
+<!--<span class="h6 font-weight-bold p-x-0 m-x-2">Designed & Developed from scratch using Twitter's Bootstrap and-->
+<!--Couple of Coffees :D</span>-->
+<!--</div>-->
 <!-- Libraries Needed -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>

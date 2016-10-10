@@ -13,7 +13,7 @@ $(document).ready(function () {
                 console.log(target.offset().top)
                 $('html, body').animate({
                     scrollTop: target.offset().top - 200
-                }, 1500);
+                }, 1200);
                 return false;
             }
         }
@@ -28,20 +28,21 @@ $(document).ready(function () {
 
         console.log("asdpoands")
     }
-    $('.bottom-nav > a').click(function (event) {
-        //Remove all active buttons
-        $('.bottom-nav > a').removeClass('active');
-        //Add active class to current button
-        $(this).addClass('active')
-
-
+    $('.navbar-fixed-top > .container > ul > li > a').click(function (event) {
         refresh()
-        var a = event.target.attributes[0].nodeValue;
-        window.location.href = a;
-        $(a).addClass("animated zoomIn")
-        $(a).siblings().css("opacity", "0.2");
+        console.log("e")
+        var a = event.target.attributes[1].nodeValue;
+        if (a !== '#') {
+            window.location.href = a;
+            console.log(a)
+            $(a).addClass("animated zoomIn")
+            $(a).siblings().css("opacity", "0.2");
+        }
 
     })
-    $(".wrapper").scroll(refresh);
+    $(".wrapper").click(refresh);
+
+    $(document).on('scroll', 'html', refresh)
+
 
 })
