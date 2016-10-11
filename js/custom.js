@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip()
 
     //Smooth Scrolling
     $('a[href*="#"]:not([href="#"])').click(function () {
