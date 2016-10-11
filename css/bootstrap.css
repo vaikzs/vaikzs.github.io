@@ -6044,30 +6044,40 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 @media (max-width: 544px) {
     .hide-on-small-only {
         opacity: 0;
+        display: none !important;
+
     }
 }
 
 @media (min-width: 544px) and (max-width: 768px) {
     .hide-on-med-only {
         opacity: 0;
+        display: none !important;
+
     }
 }
 
 @media (max-width: 768px) {
     .hide-on-med-and-down {
         opacity: 0;
+        display: none !important;
+
     }
 }
 
 @media (min-width: 768px) {
     .hide-on-med-and-up {
         opacity: 0;
+        display: none !important;
+
     }
 }
 
 @media (min-width: 1200px ) {
     .hide-on-large-only {
         opacity: 0;
+        display: none !important;
+
     }
 }
 
