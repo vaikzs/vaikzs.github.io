@@ -6300,6 +6300,14 @@ End of custom
     margin-bottom: 3rem !important;
 }
 
+.m-b-4 {
+    margin-bottom: 4rem !important;
+}
+
+.m-b-5 {
+    margin-bottom: 5rem !important;
+}
+
 .m-l-3 {
     margin-left: 3rem !important;
 }
@@ -6582,6 +6590,10 @@ a.text-info:focus, a.text-info:hover {
 
 .text-warning {
     color: #f0ad4e !important;
+}
+
+.text-white {
+    color: #ffffff !important;
 }
 
 a.text-warning:focus, a.text-warning:hover {

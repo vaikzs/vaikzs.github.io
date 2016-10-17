@@ -37,6 +37,11 @@ nav {
 
 }
 
+.wrapper > #feedback {
+    background-color: transparent;
+    color: #ECEFF1;
+}
+
 .wrapper > * > span > p {
     font-family: Roboto;
 
