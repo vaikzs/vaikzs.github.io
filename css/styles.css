@@ -150,3 +150,7 @@ Chips
     padding-left: 8px
 }
 
+input.form-control,textarea.form-control {
+    background: #E0E0E0;
+
+}
