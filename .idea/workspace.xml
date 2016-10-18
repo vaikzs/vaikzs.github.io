@@ -29,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+            <state relative-caret-position="368">
+              <caret line="74" column="85" selection-start-line="74" selection-start-column="85" selection-end-line="74" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -208,7 +208,8 @@
       <workItem from="1476150691823" duration="5126000" />
       <workItem from="1476196004692" duration="3586000" />
       <workItem from="1476714963703" duration="4773000" />
-      <workItem from="1476753813602" duration="2277000" />
+      <workItem from="1476753813602" duration="2408000" />
+      <workItem from="1476756303126" duration="199000" />
     </task>
     <task id="LOCAL-00001" summary="-">
       <created>1475916095939</created>
@@ -280,11 +281,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476755108729</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- copyrights">
+      <created>1476756109535</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1476756109535</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70225000" />
+    <option name="totallyTimeSpent" value="70555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -342,13 +350,22 @@
     <MESSAGE value="- added feedback form" />
     <MESSAGE value="- feedback form ui fix" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="- copyrights" />
+    <option name="LAST_COMMIT_MESSAGE" value="- copyrights" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="68" column="93" selection-start-line="68" selection-start-column="93" selection-end-line="68" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -377,7 +394,6 @@
             <marker date="1476754883573" expanded="true" signature="1812:1917" ph="{...}" />
             <marker date="1476754883573" expanded="true" signature="1932:2040" ph="{...}" />
             <marker date="1476754883573" expanded="true" signature="2084:2113" ph="{...}" />
-            <marker date="1476754883573" expanded="true" signature="2169:2198" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -434,7 +450,6 @@
             <marker date="1476754883573" expanded="true" signature="1812:1917" ph="{...}" />
             <marker date="1476754883573" expanded="true" signature="1932:2040" ph="{...}" />
             <marker date="1476754883573" expanded="true" signature="2084:2113" ph="{...}" />
-            <marker date="1476754883573" expanded="true" signature="2169:2198" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -506,7 +521,6 @@
             <marker date="1476754883573" expanded="true" signature="1812:1917" ph="{...}" />
             <marker date="1476754883573" expanded="true" signature="1932:2040" ph="{...}" />
             <marker date="1476754883573" expanded="true" signature="2084:2113" ph="{...}" />
-            <marker date="1476754883573" expanded="true" signature="2169:2198" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1346,7 +1360,6 @@
             <marker date="1476754883573" expanded="true" signature="1812:1917" ph="{...}" />
             <marker date="1476754883573" expanded="true" signature="1932:2040" ph="{...}" />
             <marker date="1476754883573" expanded="true" signature="2084:2113" ph="{...}" />
-            <marker date="1476754883573" expanded="true" signature="2169:2198" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2673,8 +2686,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+        <state relative-caret-position="368">
+          <caret line="74" column="85" selection-start-line="74" selection-start-column="85" selection-end-line="74" selection-end-column="85" />
           <folding />
         </state>
       </provider>
