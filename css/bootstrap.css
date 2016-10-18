@@ -6596,6 +6596,10 @@ a.text-info:focus, a.text-info:hover {
     color: #ffffff !important;
 }
 
+.text-gray {
+    color: #2b2d2f !important;
+}
+
 a.text-warning:focus, a.text-warning:hover {
     color: #ec971f !important;
 }
