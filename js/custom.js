@@ -4,6 +4,7 @@
 
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle2="popover"]').popover({animation: true, html: true, trigger: 'hover'})
 
     //Smooth Scrolling
     $('a[href*="#"]:not([href="#"])').click(function () {
@@ -11,7 +12,6 @@ $(document).ready(function () {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
-                console.log(target.offset().top)
                 $('html, body').animate({
                     scrollTop: target.offset().top - 200
                 }, 1200);
@@ -20,22 +20,20 @@ $(document).ready(function () {
         }
     });
     $('html').scrollspy(function () {
-        console.log("abc")
     })
 
     var refresh = function () {
         $(".wrapper > *").css("opacity", "1");
         $(".wrapper > *").removeClass("animated zoomIn")
 
-        console.log("asdpoands")
     }
     $('.navbar-fixed-top > .container > ul > li > a').click(function (event) {
         refresh()
-        console.log("e")
+        
         var a = event.target.attributes[1].nodeValue;
         if (a !== '#') {
             window.location.href = a;
-            console.log(a)
+
             $(a).addClass("animated zoomIn")
             $(a).siblings().css("opacity", "0.2");
         }
@@ -44,10 +42,6 @@ $(document).ready(function () {
     $(".wrapper").click(refresh);
 
     $(document).on('scroll', 'html', refresh)
-
-
-
-
 
 
 })
