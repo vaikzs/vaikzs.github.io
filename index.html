@@ -11,6 +11,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <!--<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">-->
 
+    <style>
+        .github-fork-ribbon {
+            width: 12.1em;
+            height: 12.1em;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            right: 0;
+            z-index: 9999;
+            pointer-events: none;
+            font-size: 13px;
+            text-decoration: none;
+            text-indent: -999999px
+        }
+
+        .github-fork-ribbon.fixed {
+            position: fixed
+        }
+
+        .github-fork-ribbon:after, .github-fork-ribbon:before {
+            position: absolute;
+            display: block;
+            width: 15.38em;
+            height: 1.54em;
+            top: 3.23em;
+            right: -3.23em;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        .github-fork-ribbon:before {
+            content: "";
+            padding: .38em 0;
+            background-color: orange;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .15)));
+            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .15));
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .15));
+            box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, .5);
+            pointer-events: auto
+        }
+
+        .github-fork-ribbon:after {
+            content: attr(title);
+            color: #fff;
+            font: 700 1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.54em;
+            text-decoration: none;
+            text-shadow: 0 -.08em rgba(0, 0, 0, .5);
+            text-align: center;
+            text-indent: 0;
+            padding: .15em 0;
+            margin: .15em 0;
+            border-width: .08em 0;
+            border-style: dotted;
+            border-color: #fff;
+            border-color: rgba(255, 255, 255, .7)
+        }
+
+        .github-fork-ribbon.left-bottom, .github-fork-ribbon.left-top {
+            right: auto;
+            left: 0
+        }
+
+        .github-fork-ribbon.left-bottom, .github-fork-ribbon.right-bottom {
+            top: auto;
+            bottom: 0
+        }
+
+        .github-fork-ribbon.left-bottom:after, .github-fork-ribbon.left-bottom:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.left-top:before {
+            right: auto;
+            left: -3.23em
+        }
+
+        .github-fork-ribbon.left-bottom:after, .github-fork-ribbon.left-bottom:before, .github-fork-ribbon.right-bottom:after, .github-fork-ribbon.right-bottom:before {
+            top: auto;
+            bottom: 3.23em
+        }
+
+        .github-fork-ribbon.left-top:after, .github-fork-ribbon.left-top:before, .github-fork-ribbon.right-bottom:after, .github-fork-ribbon.right-bottom:before {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-full navbar-fixed-top navbar-light bg-custom">
@@ -47,10 +130,10 @@
 
 <nav class="bottom-nav navbar navbar-fixed-bottom navbar-full navbar-dark bg-inverse">
     <ul class="nav navbar-nav container ">
-        <li class="nav-item"><a class="nav-link github-hover"
-                                href="https://www.github.com/vaikzs" target="_blank"><span
-                class="hide-on-med-and-down">GitHub</span> <i
-                class="fa fa-github text-custom"></i></a></li>
+        <!--<li class="nav-item"><a class="nav-link github-hover"-->
+                                <!--href="https://www.github.com/vaikzs" target="_blank"><span-->
+                <!--class="hide-on-med-and-down">GitHub</span> <i-->
+                <!--class="fa fa-github text-custom"></i></a></li>-->
         <li class="nav-item "><a class="nav-link" href="https://facebook.com/vaikzs" target="_blank"><span
                 class="hide-on-med-and-down">Facebook</span> <i
                 class="fa fa-facebook text-custom"></i></a>
@@ -78,6 +161,8 @@
         </a>
         </li>
     </ul>
+    <a class="github-fork-ribbon left-bottom" target="_blank" href="https://www.github.com/vaikzs" title="Follow me on GitHub"> Follow me on GitHub </a>
+
 </nav>
 <div class="display row">
 
@@ -165,7 +250,7 @@
 
         <h2 class="font-weight-bold p-x-0 m-x-2 m-t-2">Projects</h2>
 
-       <span href="#" class="p-x-1">
+        <span href="#" class="p-x-1">
             <h4 class="font-weight-bold p-x-2">kHealth Asthma<a class="pull-xs-right text-muted hide-on-med-and-up"
                                                                 href="http://wiki.knoesis.org/index.php/Asthma"
                                                                 target="_blank">WikiLink</a><a
@@ -188,7 +273,7 @@
             </p>
             <p class="p-x-2 h5 text-justify">Researcher and developer for Dementia project, k-health Dementia kit consists of blue-tooth sensors and tablet device with our Android app. This mobile/sensor application aspires to study the behavioral markers for dementia patients.</p>
         </span>
-         <span href="#" class="p-x-1">
+        <span href="#" class="p-x-1">
             <h4 class="font-weight-bold p-x-2">City360 <a class="pull-xs-right text-muted hide-on-med-and-up"
                                                           href="http://bit.ly/21h7T2G"
                                                           target="_blank">DemoLink</a><a
@@ -396,7 +481,6 @@
         </div>
     </div>
 </div>
-
 
 
 <!--<div class="bg-inverse">-->
