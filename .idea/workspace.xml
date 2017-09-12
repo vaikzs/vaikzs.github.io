@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d3a8ae8-65e7-415e-aa30-f9de0f6f5a4b" name="Default" comment="- kHealth Dashboard">
+    <list default="true" id="0d3a8ae8-65e7-415e-aa30-f9de0f6f5a4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -30,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="384" column="122" selection-start-line="384" selection-start-column="122" selection-end-line="384" selection-end-column="122" />
+            <state relative-caret-position="234">
+              <caret line="272" column="27" selection-start-line="272" selection-start-column="27" selection-end-line="272" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#span#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -257,7 +257,7 @@
       <workItem from="1505171043057" duration="5629000" />
       <workItem from="1505179873789" duration="17000" />
       <workItem from="1505245225913" duration="1975000" />
-      <workItem from="1505251802049" duration="144000" />
+      <workItem from="1505251802049" duration="258000" />
     </task>
     <task id="LOCAL-00001" summary="-">
       <created>1475916095939</created>
@@ -364,11 +364,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505247619578</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="-">
+      <created>1505251955264</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1505251955265</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85336000" />
+    <option name="totallyTimeSpent" value="85450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -425,11 +432,11 @@
     <MESSAGE value="- new" />
     <MESSAGE value="- added feedback form" />
     <MESSAGE value="- feedback form ui fix" />
-    <MESSAGE value="-" />
     <MESSAGE value="- copyrights" />
     <MESSAGE value="- Testimonials and Images" />
     <MESSAGE value="- kHealth Dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="- kHealth Dashboard" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -840,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="384" column="122" selection-start-line="384" selection-start-column="122" selection-end-line="384" selection-end-column="122" />
+        <state relative-caret-position="234">
+          <caret line="272" column="27" selection-start-line="272" selection-start-column="27" selection-end-line="272" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#span#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
