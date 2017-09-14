@@ -174,11 +174,12 @@
                 class="blockquote m-l-3 m-t-6 m-x-auto d-block animated slideInLeft text-justify text-custom2 font-weight-bold">
             <h2 class="font-weight-bold">About me</h2>
 
-            Hello there. I am Master's Student advised by Dr. Amit Sheth, Lexis Nexis Ohio
-            Eminent Scholar and Director of Kno.e.sis - Ohio Center of Excellence in Knowledge Enabled Computing. I'm
-            co-advised by Dr. Krishnaprasad Thirunarayan, Professor and Dr. Tanvi Banerjee, Assistant Professor at
-            Wright State University, Ohio with whom I collaborate on building
-            Platforms for Data Analytics in the context of Health-care and City Traffic.
+            <span class="text-warning">Graduate Student</span> at Wright State University. Aspiring Full-stack Engineer
+            biased toward front-end.
+            <!--<br/><span class="delay">Creative.</span>-->
+            <!--<br/><span class="delay">Pedantic.</span>-->
+            <!--<br/><span class="delay">Artistic.</span>-->
+            <!---->
         </blockquote>
 
     </div>
@@ -405,7 +406,17 @@
 <script src="js/bootstrap.js" type="application/javascript"></script>
 <script src="js/custom.js" type="application/javascript"></script>
 <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
+<script>
 
+    $('.delay').css('display', 'none')
+
+    setTimeout(function () {
+        $('.delay').css('display', 'inline')
+        $('.delay').toggleClass('animated fadeInUp')
+    }, 2300)
+
+
+</script>
 
 </body>
 </html>
