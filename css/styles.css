@@ -110,9 +110,17 @@ body {
 }
 
 .text-custom2 {
-    color: #E0E0E0;
-
+    color: #fff;
     font-family: Montserrat;
+}
+.text-white {
+    color: #fff;
+    font-family: Montserrat;
+}
+
+*,html { color: #fff;
+    font-family: Montserrat;
+
 }
 
 /*
