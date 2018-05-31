@@ -5958,7 +5958,12 @@ button.close {
 .bg-custom {
     background-color: #26A69A;
 }
-
+.bg-custom2 {
+    background-color: rgba(153, 195, 148, 0.61);
+}
+.bg-custom3 {
+    background-color: #203A45;
+}
 .bg-primary {
     color: #fff !important;
     background-color: #0275d8 !important;

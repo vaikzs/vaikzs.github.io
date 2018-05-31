@@ -4,7 +4,7 @@
 }
 
 nav {
-    font-family: Montserrat;
+    
     letter-spacing: 1px;
     font-size: 20px;
 }
@@ -13,7 +13,6 @@ nav {
     color: #BDBDBD;
 
     font-weight: bold;
-    font-family: Montserrat;
 
 }
 
@@ -28,13 +27,10 @@ nav {
     color: #fff;
 }
 
-.wrapper {
-    font-family: Montserrat;
 
-}
 
 .wrapper > * {
-    background-color: #BDBDBD;
+    background-color: rgba(189, 189, 189, 0.71);
     color: #ECEFF1;
     margin: 2%;
     border-radius: 30px;
@@ -47,14 +43,13 @@ nav {
     color: #ECEFF1;
 }
 
-.wrapper > * > span > p {
-    font-family: Roboto;
 
-}
 
 html {
     overflow-y: visible;
     overflow-x: hidden;
+    
+
 }
 
 a:hover {
@@ -90,7 +85,7 @@ a:hover {
 .display > .row > a {
     color: #E0E0E0;
     font-weight: bold;
-    font-family: Montserrat;
+    
 
 }
 
@@ -106,20 +101,22 @@ body {
 
 .text-custom {
     color: #607D8B;
-    font-family: Montserrat;
+    
 }
 
 .text-custom2 {
     color: #fff;
-    font-family: Montserrat;
+    
 }
 .text-white {
     color: #fff;
-    font-family: Montserrat;
+    
 }
 
-*,html { color: #fff;
-    font-family: Montserrat;
+*,html { 
+    font-family: Lato;
+    color: #fff;
+    
 
 }
 
