@@ -9,11 +9,139 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animate.css">
     <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat"> -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
     <!--<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">-->
 
     <style>
+        .tap-target-wrapper {
+            width: 800px;
+            height: 800px;
+            position: fixed;
+            z-index: 1000;
+            visibility: hidden;
+            transition: visibility 0s .3s
+        }
+
+        .tap-target-wrapper.open {
+            visibility: visible;
+            transition: visibility 0s
+        }
+
+        .tap-target-wrapper.open .tap-target {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: .95;
+            transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+            transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+            transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1)
+        }
+
+        .tap-target-wrapper.open .tap-target-wave::before {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+
+        .tap-target-wrapper.open .tap-target-wave::after {
+            visibility: visible;
+            -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+            transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+            transition: opacity .3s, transform .3s, visibility 0s 1s;
+            transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s
+        }
+
+        .tap-target {
+            position: absolute;
+            font-size: 1rem;
+            border-radius: 50%;
+            background-color: #ee6e73;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            transition: opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+            transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+            transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1), opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1)
+        }
+
+        .tap-target-content {
+            position: relative;
+            display: table-cell
+        }
+
+        .tap-target-wave {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 10001
+        }
+
+        .tap-target-wave::before,
+        .tap-target-wave::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #ffffff
+        }
+
+        .tap-target-wave::before {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            transition: -webkit-transform .3s;
+            transition: transform .3s;
+            transition: transform .3s, -webkit-transform .3s
+        }
+
+        .tap-target-wave::after {
+            visibility: hidden;
+            transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+            transition: opacity .3s, transform .3s, visibility 0s;
+            transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+            z-index: -1
+        }
+
+        .tap-target-origin {
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 10002;
+            position: absolute !important
+        }
+
+        .tap-target-origin:not(.btn):not(.btn-large),
+        .tap-target-origin:not(.btn):not(.btn-large):hover {
+            background: none
+        }
+
+        @media only screen and (max-width: 600px) {
+            .tap-target,
+            .tap-target-wrapper {
+                width: 600px;
+                height: 600px
+            }
+        }
+
+        .pulse {
+            overflow: initial;
+            position: relative
+        }
+
+        .tap-target {
+            color: #fff;
+            background-color: rgb(212, 52, 52)
+        }
+
+        .tap-target a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
         .github-fork-ribbon {
             width: 12.1em;
             height: 12.1em;
@@ -190,8 +318,8 @@
                 </a>
             </li>
             <li class="nav-item ">
-                <a href="#" class="nav-link">
-                    <span class="hide-on-med-and-down" data-toggle="modal" data-target="#exampleModal">Resume</span>
+                <a href="asserts/VaikunthSridharan.pdf" id="resume" class="nav-link" download>
+                    <span class="hide-on-med-and-down">Resume</span>
                     <i class="fa fa-download text-custom"></i>
                 </a>
             </li>
@@ -463,53 +591,15 @@
 
 
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content bg-custom3" style="background-color: rgba(32, 58, 69, 0.85);">
-                <div class="modal-header" style="border: 0ch">
-                    <h5 class="modal-title" id="exampleModalLabel">Resume
-                        <i class="pull-xs-right fa fa-download text-custom"></i>
-                    </h5>
 
-                </div>
-                <div class="modal-body ">
-                    <div class="row m-x-0">
-                        <div class="col-xs-4 offset-xs-2 card-block" style="background-color:rgba(255, 255, 255, 0.459);height: 85px; border-radius: 2%">
-                            <h2 class="text-xs-center row">
-                                <div class="col-xs-4">
-                                    <a href="asserts/VaikunthSridharan_single_column.pdf" class="h2 font-weight-bold" style="text-decoration: none"
-                                        download>
-                                        1
-                                    </a>
-                                </div>
-                                <div class="col-xs-8">
-                                    <img class="responsive-img img-fluid" src="asserts/single_column.PNG" style="width:90%;height: 150%;margin-bottom: 55%" />
-                                </div>
-                            </h2>
-
-                        </div>
-                        <div class="col-xs-4 offset-xs-1 card-block" style="background-color:#fff;height: 85px; border-radius: 2%">
-                            <div class="text-xs-center row">
-                                <div class="col-xs-4">
-                                    <a href="asserts/VaikunthSridharan_double_column.pdf" class="h2 p-x-2 font-weight-bold text-muted" style="text-decoration: none"
-                                        download>
-                                        2
-                                    </a>
-                                </div>
-                                <div class="col-xs-8">
-                                    <img class="responsive-img img-fluid" src="asserts/double_column.PNG" style="width:90%;height: 150%;margin-bottom: 55%" />
-                                </div>
-                            </h2>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <!-- Tap Target Structure -->
+    <div class="tap-target teal lighten-3" data-activates="resume">
+        <div class="tap-target-content">
+            <h5>Available: 24/7</h5>
+            <p>Call us now to speak with someone about your matter.</p>
+            <a href="#!" onclick="$('.tap-target').tapTarget('close')">Dismiss</a>
         </div>
     </div>
-
     <!--<div class="bg-inverse">-->
     <!--<span class="h6 font-weight-bold p-x-0 m-x-2">Designed & Developed from scratch using Twitter's Bootstrap and-->
     <!--Couple of Coffees :D</span>-->
@@ -520,16 +610,20 @@
     <script src="js/bootstrap.js" type="application/javascript"></script>
     <script src="js/custom.js" type="application/javascript"></script>
     <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
+    <script src="js/materialize.js"></script>
     <script>
 
-        $('.delay').css('display', 'none')
+        $(document).ready(function () {
+            $('.delay').css('display', 'none')
 
-        setTimeout(function () {
-            $('.delay').css('display', 'inline')
-            $('.delay').toggleClass('animated fadeInUp')
-        }, 2300)
+            setTimeout(function () {
+                $('.delay').css('display', 'inline')
+                $('.delay').toggleClass('animated fadeInUp')
+            }, 2300)
 
+            // $('.tap-target').tapTarget('open');
 
+        })
     </script>
 
 
