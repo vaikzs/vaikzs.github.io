@@ -30,7 +30,7 @@ nav {
 
 
 .wrapper > * {
-    background-color: rgba(189, 189, 189, 0.71);
+    background-color: #3535358e;
     color: #ECEFF1;
     margin: 2%;
     border-radius: 30px;
@@ -93,7 +93,7 @@ a:hover {
 }
 
 body {
-    background-color: #607D8B;
+    background-color: rgb(96, 125, 139)
 
 }
 
@@ -104,6 +104,10 @@ body {
 
 .text-custom2 {
     color: #fff;
+    
+}
+.text-custom3 {
+    color: rgb(38, 162, 168);
     
 }
 .text-white {
