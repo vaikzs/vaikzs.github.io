@@ -30,7 +30,7 @@ nav {
     padding: 0.5%;
 }
 
-.wrapper>#feedback {
+.wrapper > #feedback {
     background-color: transparent;
     color: #ECEFF1;
 }
@@ -407,4 +407,31 @@ input.form-control:focus, textarea.form-control:focus {
 .github-fork-ribbon.left-top:after, .github-fork-ribbon.left-top:before, .github-fork-ribbon.right-bottom:after, .github-fork-ribbon.right-bottom:before {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg)
+}
+
+
+
+
+.Question__badge {
+    position: absolute;
+    right: 2%;
+    width : 100px;
+    height : 25px;
+    transform: translateX(-50%);
+    top: -17px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: #35353548;
+    color: #8385aa;
+    line-height: 1;
+    outline: 0;
+    border-top: 1px solid #353535;
+    z-index: 1;
+}
+
+.Question, .Question-wrapper {
+    position: relative;
 }
