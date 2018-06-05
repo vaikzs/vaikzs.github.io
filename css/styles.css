@@ -28,9 +28,10 @@ nav {
     margin: 2%;
     border-radius: 30px;
     padding: 0.5%;
+
 }
 
-.wrapper > #feedback {
+.wrapper>#feedback {
     background-color: transparent;
     color: #ECEFF1;
 }
@@ -409,14 +410,11 @@ input.form-control:focus, textarea.form-control:focus {
     transform: rotate(-45deg)
 }
 
-
-
-
 .Question__badge {
     position: absolute;
     right: 2%;
-    width : 100px;
-    height : 25px;
+    width: 100px;
+    height: 25px;
     transform: translateX(-50%);
     top: -17px;
     padding: 5px 10px;
