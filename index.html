@@ -234,7 +234,7 @@
                     <hr class="m-l-2 m-r-2 bg-custom2" />
 
                     <span href="#" class="p-x-1">
-                        <h4 class=" p-x-2 lead">kHealth Dashboard (Thesis)
+                        <h4 class="p-x-2 lead">kHealth Dashboard (Thesis)
                             <a class="pull-xs-right text-custom3 hide-on-med-and-up" href="https://vaikzs.github.io/kHealth-Dash" target="_blank">Link</a>
                             <a class="pull-xs-right text-custom3 hide-on-med-and-down" href="https://vaikzs.github.io/kHealth-Dash" target="_blank">https://vaikzs.github.io/kHealth-Dash</a>
                         </h4>
@@ -412,20 +412,20 @@
             sr.reveal('#proj', { duration: 2000 });
             sr.reveal('#testimonials', { duration: 2000 });
             sr.reveal('#contact', { duration: 2000 });
-            // $(window).scroll(function(){
-            //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            //         $('.primary-navbar').addClass('animated fadeOutUp')
-            //         $('.secondary-navbar').addClass('animated fadeOutDown')
+            $(window).scroll(function(){
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    $('.primary-navbar').addClass('animated fadeOutUp')
+                    $('.secondary-navbar').addClass('animated fadeOutDown')
 
-            //     }
-            //     else {
-            //         $('.primary-navbar').removeClass('animated fadeOutUp')
-            //         $('.secondary-navbar').removeClass('animated fadeOutDown')
-            //         $('.primary-navbar').addClass('animated fadeInDown')
-            //         $('.secondary-navbar').addClass('animated fadeInUp')
-            //     }
-            //     console.log(document.documentElement.scrollTop)
-            // })
+                }
+                else {
+                    $('.primary-navbar').removeClass('animated fadeOutUp')
+                    $('.secondary-navbar').removeClass('animated fadeOutDown')
+                    $('.primary-navbar').addClass('animated fadeInDown')
+                    $('.secondary-navbar').addClass('animated fadeInUp')
+                }
+                console.log(document.documentElement.scrollTop)
+            })
 
         }) 
     </script>
