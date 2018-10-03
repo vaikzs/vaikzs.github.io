@@ -28,7 +28,6 @@ nav {
     margin: 2%;
     border-radius: 30px;
     padding: 0.5%;
-
 }
 
 .wrapper>#feedback {
@@ -79,7 +78,34 @@ a:hover {
 }
 
 body {
-    background-color: rgb(96, 125, 139)
+    background-color: #356e7f
+}
+
+.container-pattern-orange {
+    position: relative;
+    z-index: 1;
+}
+
+.container-pattern-orange:before, .container-pattern-orange:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container-pattern-orange:before {
+    background: linear-gradient(90deg, rgb(139, 129, 115) 0%, rgb(70, 65, 58) 100%);
+    z-index: -2
+}
+
+.container-pattern-orange:after {
+    background: url("../svg/pattern.svg") repeat;
+    z-index: -1;
+    opacity: 0.02
 }
 
 .text-custom {
@@ -432,4 +458,59 @@ input.form-control:focus, textarea.form-control:focus {
 
 .Question, .Question-wrapper {
     position: relative;
+}
+
+.shape-levitate {
+    position: relative;
+    display: inline-block
+}
+
+.shape-levitate img {
+    animation: levitate 3s linear infinite
+}
+
+.shape-levitate:after {
+    content: '';
+    width: 80%;
+    left: 10%;
+    bottom: -20px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 45px 0px rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+    display: block;
+    height: 20px;
+    transform-origin: center;
+    transform: scale(0.4);
+    animation: levitateShadow 3s linear infinite
+}
+
+.shape-levitate--dark:after {
+    box-shadow: 0px 0px 30px 0px rgba(28, 35, 41, 0.9);
+    background: rgba(28, 35, 41, 0.2)
+}
+
+@keyframes levitate {
+    0% {
+        transform: translateY(0);
+        transform-origin: center
+    }
+    50% {
+        transform: translateY(-10px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes levitateShadow {
+    0% {
+        transform: scale(0.4)
+    }
+    50% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(0.4)
+    }
 }
