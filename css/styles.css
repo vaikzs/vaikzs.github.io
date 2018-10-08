@@ -86,7 +86,8 @@ body {
     z-index: 1;
 }
 
-.container-pattern-orange:before, .container-pattern-orange:after {
+.container-pattern-orange:before,
+.container-pattern-orange:after {
     content: '';
     display: block;
     position: absolute;
@@ -121,15 +122,25 @@ body {
 }
 
 .text-orange {
-    color: #ffd000f5
+    color: #FAA634
+}
+
+.text-fancy {
+    color: #FAA634;
+    font-weight: 600;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
 }
 
 .text-white {
     color: #fff;
 }
 
-*, html {
-    font-family: Lato;
+*,
+html {
+    font-family: 'Titillium Web', sans-serif;
     color: #fff;
 }
 
@@ -167,11 +178,13 @@ Chips
     padding-left: 8px
 }
 
-input.form-control, textarea.form-control {
+input.form-control,
+textarea.form-control {
     background: #f0f0f0;
 }
 
-input.form-control:focus, textarea.form-control:focus {
+input.form-control:focus,
+textarea.form-control:focus {
     background: #f0f0f0;
 }
 
@@ -246,7 +259,8 @@ input.form-control:focus, textarea.form-control:focus {
     font-family: Lato;
 }
 
-.tap-target-wave::before, .tap-target-wave::after {
+.tap-target-wave::before,
+.tap-target-wave::after {
     content: '';
     display: block;
     position: absolute;
@@ -283,12 +297,15 @@ input.form-control:focus, textarea.form-control:focus {
     font-family: Lato;
 }
 
-.tap-target-origin:not(.btn):not(.btn-large), .tap-target-origin:not(.btn):not(.btn-large):hover {
+.tap-target-origin:not(.btn):not(.btn-large),
+.tap-target-origin:not(.btn):not(.btn-large):hover {
     background: none
 }
 
 @media only screen and (max-width: 600px) {
-    .tap-target, .tap-target-wrapper {
+
+    .tap-target,
+    .tap-target-wrapper {
         width: 600px;
         height: 600px
     }
@@ -324,11 +341,13 @@ input.form-control:focus, textarea.form-control:focus {
         -webkit-transform: scale(1);
         transform: scale(1)
     }
+
     50% {
         opacity: 0;
         -webkit-transform: scale(1.5);
         transform: scale(1.5)
     }
+
     100% {
         opacity: 0;
         -webkit-transform: scale(1.5);
@@ -342,11 +361,13 @@ input.form-control:focus, textarea.form-control:focus {
         -webkit-transform: scale(1);
         transform: scale(1)
     }
+
     50% {
         opacity: 0;
         -webkit-transform: scale(1.5);
         transform: scale(1.5)
     }
+
     100% {
         opacity: 0;
         -webkit-transform: scale(1.5);
@@ -372,7 +393,8 @@ input.form-control:focus, textarea.form-control:focus {
     position: fixed
 }
 
-.github-fork-ribbon:after, .github-fork-ribbon:before {
+.github-fork-ribbon:after,
+.github-fork-ribbon:before {
     position: absolute;
     display: block;
     width: 15.38em;
@@ -411,27 +433,38 @@ input.form-control:focus, textarea.form-control:focus {
     border-color: rgba(255, 255, 255, .7)
 }
 
-.github-fork-ribbon.left-bottom, .github-fork-ribbon.left-top {
+.github-fork-ribbon.left-bottom,
+.github-fork-ribbon.left-top {
     right: auto;
     left: 0
 }
 
-.github-fork-ribbon.left-bottom, .github-fork-ribbon.right-bottom {
+.github-fork-ribbon.left-bottom,
+.github-fork-ribbon.right-bottom {
     top: auto;
     bottom: 0
 }
 
-.github-fork-ribbon.left-bottom:after, .github-fork-ribbon.left-bottom:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.left-top:before {
+.github-fork-ribbon.left-bottom:after,
+.github-fork-ribbon.left-bottom:before,
+.github-fork-ribbon.left-top:after,
+.github-fork-ribbon.left-top:before {
     right: auto;
     left: -3.23em
 }
 
-.github-fork-ribbon.left-bottom:after, .github-fork-ribbon.left-bottom:before, .github-fork-ribbon.right-bottom:after, .github-fork-ribbon.right-bottom:before {
+.github-fork-ribbon.left-bottom:after,
+.github-fork-ribbon.left-bottom:before,
+.github-fork-ribbon.right-bottom:after,
+.github-fork-ribbon.right-bottom:before {
     top: auto;
     bottom: 3.23em
 }
 
-.github-fork-ribbon.left-top:after, .github-fork-ribbon.left-top:before, .github-fork-ribbon.right-bottom:after, .github-fork-ribbon.right-bottom:before {
+.github-fork-ribbon.left-top:after,
+.github-fork-ribbon.left-top:before,
+.github-fork-ribbon.right-bottom:after,
+.github-fork-ribbon.right-bottom:before {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg)
 }
@@ -456,7 +489,8 @@ input.form-control:focus, textarea.form-control:focus {
     z-index: 1;
 }
 
-.Question, .Question-wrapper {
+.Question,
+.Question-wrapper {
     position: relative;
 }
 
@@ -495,9 +529,11 @@ input.form-control:focus, textarea.form-control:focus {
         transform: translateY(0);
         transform-origin: center
     }
+
     50% {
         transform: translateY(-10px)
     }
+
     100% {
         transform: translateY(0)
     }
@@ -507,9 +543,11 @@ input.form-control:focus, textarea.form-control:focus {
     0% {
         transform: scale(0.4)
     }
+
     50% {
         transform: scale(1)
     }
+
     100% {
         transform: scale(0.4)
     }
