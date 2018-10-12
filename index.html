@@ -423,6 +423,7 @@
 
             $('#step-1').tapTarget('open');
 
+            /*
             setTimeout(function () {
                 $('#step-1').tapTarget('close');
                 // download('asserts/VaikunthSridharan.docx', 'Vaikunth_Resume')
@@ -430,6 +431,7 @@
                     $('#step-1').tapTarget('open');
                 }, 18000)
             }, 6000)
+            */
 
             window.sr = ScrollReveal();
             // sr.reveal('.about-me');
@@ -450,18 +452,23 @@
             });
             $(window).scroll(function () {
                 if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    $('#step-1').tapTarget('close');
                     $('.primary-navbar').addClass('animated fadeOutUp')
                     $('.secondary-navbar').addClass('animated fadeOutDown')
 
-                } else {
+                }
+
+                else {
                     $('.primary-navbar').removeClass('animated fadeOutUp')
                     $('.secondary-navbar').removeClass('animated fadeOutDown')
                     $('.primary-navbar').addClass('animated fadeInDown')
                     $('.secondary-navbar').addClass('animated fadeInUp')
                 }
+
             })
 
         })
+
     </script>
 
 
