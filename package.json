@@ -1,0 +1,27 @@
+{
+  "name": "vaikzs.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaikzs/vaikzs.github.io.git"
+  },
+  "keywords": [],
+  "author": "Vaikunth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaikzs/vaikzs.github.io/issues"
+  },
+  "homepage": "https://github.com/vaikzs/vaikzs.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-zip": "^4.0.0"
+  }
+}
